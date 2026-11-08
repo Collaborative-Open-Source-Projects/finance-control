@@ -12,6 +12,7 @@ model Category {
   type      String
   icon      String
   color     String
+  budgetLimit Float?  
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
