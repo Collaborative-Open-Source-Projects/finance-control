@@ -2,9 +2,8 @@
 CREATE TABLE "Category" (
     "id" TEXT NOT NULL PRIMARY KEY,
     "name" TEXT NOT NULL,
-    "type" TEXT NOT NULL,
-    "icon" TEXT NOT NULL,
-    "color" TEXT NOT NULL,
+    "color" TEXT,
+    "budgetLimit" REAL,
     "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" DATETIME NOT NULL
 );
