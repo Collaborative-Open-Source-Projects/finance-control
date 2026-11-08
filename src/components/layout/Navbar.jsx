@@ -43,7 +43,7 @@ export default function Navbar() {
                                     "flex items-center gap-3 px-3.5 py-2.5 rounded-lg font-medium text-sm transition-colors",
                                     isActive
                                         ? "bg-[#10B981] shadow-sm text-white"
-                                        : "text-slate-400 hover:text-white hover:bg-[#0D1322]"
+                                        : "text-slate-400 hover:text-emerald-400 hover:bg-emerald-500/10"
                                 )}
                             >
                                 <Icon className="w-4 h-4 shrink-0" />

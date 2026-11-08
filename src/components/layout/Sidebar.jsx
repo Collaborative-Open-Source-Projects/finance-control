@@ -34,18 +34,18 @@ export default function Sidebar() {
                             key={item.name}
                             href={item.href}
                             className={cn(
-                                "group flex items-center gap-3 px-3.5 py-2.5 rounded-lg font-medium text-sm transition-all duration-150",
+                                "group flex items-center gap-3 px-3.5 py-2.5 rounded-lg font-medium text-sm transition-all duration-150 border",
                                 isActive
-                                    ? "bg-zinc-900 text-white shadow-xs dark:bg-zinc-100 dark:text-zinc-900"
-                                    : "text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100/70 dark:text-zinc-400 dark:hover:text-zinc-100 dark:hover:bg-zinc-800/50"
+                                    ? "bg-emerald-500/10 text-emerald-600 dark:bg-emerald-500/15 dark:text-emerald-400 border-emerald-500/25 dark:border-emerald-500/30 shadow-xs"
+                                    : "border-transparent text-zinc-600 hover:text-emerald-600 hover:bg-emerald-500/10 hover:border-emerald-500/20 dark:text-zinc-400 dark:hover:text-emerald-400 dark:hover:bg-emerald-500/10 dark:hover:border-emerald-500/20"
                             )}
                         >
                             <Icon
                                 className={cn(
                                     "w-4 h-4 transition-colors shrink-0",
                                     isActive
-                                        ? "text-white dark:text-zinc-900"
-                                        : "text-zinc-400 group-hover:text-zinc-700 dark:text-zinc-500 dark:group-hover:text-zinc-300"
+                                        ? "text-emerald-600 dark:text-emerald-400"
+                                        : "text-zinc-400 group-hover:text-emerald-600 dark:text-zinc-500 dark:group-hover:text-emerald-400"
                                 )}
                             />
                             <span>{item.name}</span>
